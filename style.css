@@ -7,12 +7,13 @@
     --light-blue-color: #6f7dfb;
   }
 
-  *, *::after, *::before {
+  * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
   body {
-    margin: 0;
     font-family: "Poppins", sans-serif;
   }
   
@@ -44,7 +45,19 @@
     top: 42px;
     left: 122px;
     z-index: 999;
-    /* transition: all 500ms ease;  */
+    transition: all 500ms ease; 
+  }
+
+  nav.scrolled {
+    background: var(--dark-color);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    top: 20px;
+    padding: 0 25px;
+  }
+  nav.scrolled .enroll-btn{
+    background: var(--orange-color);
+    transition: all 500ms ease; 
   }
 
    nav ul {
@@ -506,4 +519,6 @@ footer form .submit-btn {
 footer .copyright {
   margin-top: 36px;
 }
+
+
 
